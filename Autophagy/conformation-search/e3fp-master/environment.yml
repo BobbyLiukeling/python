@@ -1,0 +1,14 @@
+channels:
+  - conda-forge
+dependencies:
+  # required
+  - mmh3>=2.3.1
+  - rdkit>=2016.03.4
+  - numpy>=1.11.3
+  - scipy>=0.18.0
+  - setuptools
+  - sdaxen_python_utilities>=0.1.4
+  # optional
+  - mpi4py
+  - standardiser
+  - h5py

@@ -1,0 +1,16 @@
+VL_CA1,VL_CA3,VL_cpd,cpd_MB,MB_TH,TH_CA1,TH_CA3,cpd_HYL,HYL_TH,VL_fxs,fxs_HYL,fxs_MB,VL_I,I_V-Via-Vib,V-VIa-Vib_II-III-IV,I_RSP
+Icam5_Itgal,Thy1_Fyn,Lama5_Itgb4,Calm2_Kcnq3,Cck_Cckbr,Icam5_Itgb2,Dkk3_Kremen1,Gnas_Gcgr,Ramp3_Vip,Sostdc1_LrP6,Gnas_Ptgdr,Gnas_Gcgr,Kl_Fgf23,Il10rb_Il10,Ptn_Ptprb,Calm2_Grm7
+Icam5_Itga2,,Npr3_Nppc,Calm2_Scn10a,Ramp3_Vip,Icam5_Itgal,Icam5_Itgb2,Gnas_Pth1r,Ramp3_Iapp,Col9a3_Mag,Podxl2_Sell,Gnas_Lhcgr,Il10rb_Il10,Sostdc1_Lrp6,Apoe_Lrp6,Calm2_Scn4a
+,,Npr3_Nppa,Calm2_Adcy8,NtngI_Lrrc4,Dkk3_Kremen1,Nptxr_Nptx2,GnasvPtgdr,Cck_Cckbr,Kl_Fgf23,Calm2_Scn10a,Agt_Agtr1a,Il10rb_Vcn2,Il10rb_Vcn3,Apoe_Sdc1,Hspa8_Aqp2
+,,Npr3_Vip,Calm2_Cacna1c,Ntng1_Lrrc4,,Icam5_Itgal,Thy1_Fyn,Ramp3_Adcyap1,,Calm2_Adcy8,Agt_Agtr1b,Sostdc1_Lrp6,Kl_Fgf23,Plxnd1_Sema3c,Calm2_Adcy8
+,,Htr2c_Lin7c,Calm2_Scn4a,Ramp3_Adm2,,Nptxr_Nptx1,Gnas_Lhcgr,Ntng1_Lrrc4,,Calm2_Trpc5,Agt_Lrp2,Lepr_Lep,Lepr_Lep,Ptn_Ptprz1,Calm2_Mylk
+,,Npr3_Ostn,Gnas_Htr6,Ramp3_Adcyap1,,,Gnas_Htr6,Ramp3_Adm2,,Calm2_Kcnq3,Gnas_Ptgdr,SostdcI_Lrp6,SostdcI_Lrp6,Ptn_Nrp1,Calm2_Kcnq3
+,,Sostdc1_Lrp6,Calm2_Mylk,Cck_Cckar,,,Gnas_Ptgdr,Cx3cl1_Itgb1,,Gnas_Htr6,Agt_Mas1,Il10rb_Vcn3,Il10rb_Vcn2,Apoe_Lrp2,Calm2_Cacna1c
+,,Lama5_Bcam,Calm2_Grm7,Cck_CckBr,,,,Cck_Cckar,,Gnas_Gcgr,"Gnas_Pth1r
+",,,Ptn_Sdc4,Calm2_Trpc5
+,,Npr3_Nppb,Gnas_Lhcgr,Ramp3_Iapp,,,,Cx3cl1_Cx3cr1,,Calm2_Cacna1c,Agt_Agtr2,,,Apoe_Ldlr,Calm2_Scn10a
+,,,Gng3_Kcnj6,,,,,Cx3cl1_Itgb3,,Calm2_Grm7,Gnas_Htr6,,,Ptn_Sdc1,
+,,,Gnas_Ptgdr,,,,,Cx3cl1_Itga4,,Gnas_Lhcgr,,,,Apoe_Lrp8,
+,,,Calm2_Trpc5,,,,,Cx3cl1_Itgav,,Calm2_Scn4a,,,,Plxnd1_Sema3e,
+,,,Gnas_Pth1r,,,,,,,Calm2_Mylk,,,,Apoe_Lrp5,
+,,,Gnas_Gcgr,,,,,,,Gnas_Pth1r,,,,Plxnd1_Sema4a,

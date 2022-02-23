@@ -1,0 +1,1545 @@
+2018-09-19 17:20:44 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: ZhichengArticle)
+2018-09-19 17:20:44 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.14393-SP0
+2018-09-19 17:20:44 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'ZhichengArticle', 'LOG_FILE': './log.log', 'NEWSPIDER_MODULE': 'ZhichengArticle.spiders', 'SPIDER_MODULES': ['ZhichengArticle.spiders']}
+2018-09-19 17:20:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-19 17:20:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2018-09-19 17:20:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:20:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'ZhichengArticle.middlewares.ZhichengarticleDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-19 17:20:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-19 17:20:50 [scrapy.middleware] INFO: Enabled item pipelines:
+['ZhichengArticle.pipelines.ZhichengarticlePipeline']
+2018-09-19 17:20:50 [scrapy.core.engine] INFO: Spider opened
+2018-09-19 17:20:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-19 17:20:50 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-19 17:20:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:20:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:20:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element/0.6542550639819109-1/click {"id": "0.6542550639819109-1", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element/0.6542550639819109-2/click {"id": "0.6542550639819109-2", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element {"using": "xpath", "value": ".//*[@class='Login-socialButtonGroup']/button[3]", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element/0.6542550639819109-3/click {"id": "0.6542550639819109-3", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:20:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:05 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/refresh {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:06 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:21:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element/0.32423648883986944-1/click {"id": "0.32423648883986944-1", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/refresh {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:18 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:18 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:21:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element/0.43907516032689786-1/click {"id": "0.43907516032689786-1", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/refresh {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:34 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:34 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:21:39 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://zhuanlan.zhihu.com/p/25396421", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:43 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:43 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/25396421> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:21:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://zhuanlan.zhihu.com/p/22434538", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:46 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:46 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/22434538> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:21:46 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://zhuanlan.zhihu.com/p/41045786", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/41045786> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:21:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://zhuanlan.zhihu.com/p/40163892", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:53 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/40163892> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:21:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/25396421>
+None
+2018-09-19 17:21:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/22434538>
+None
+2018-09-19 17:21:53 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 7 pages/min), scraped 2 items (at 2 items/min)
+2018-09-19 17:21:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/41045786>
+None
+2018-09-19 17:21:53 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.zhihu.com/question/20356773/answer/89333421> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-09-19 17:21:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/40163892>
+None
+2018-09-19 17:21:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://zhuanlan.zhihu.com/p/36527243", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:21:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/36527243> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:21:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://zhuanlan.zhihu.com/p/25370234", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:21:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/25370234> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:22:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/47367985/answer/115810674", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/47367985/answer/115810674> (referer: https://zhuanlan.zhihu.com/p/22434538)
+2018-09-19 17:22:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/270349158/answer/353521410", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:08 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:08 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/270349158/answer/353521410> (referer: https://zhuanlan.zhihu.com/p/22434538)
+2018-09-19 17:22:08 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://zhuanlan.zhihu.com/p/26604228", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:10 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:10 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/26604228> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:22:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/36527243>
+None
+2018-09-19 17:22:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/19937442/answer/15059688", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:14 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:14 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/19937442/answer/15059688> (referer: https://zhuanlan.zhihu.com/p/25396421)
+2018-09-19 17:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/25370234>
+None
+2018-09-19 17:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/270349158/answer/353521410>
+None
+2018-09-19 17:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/26604228>
+None
+2018-09-19 17:22:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442/answer/15059688>
+None
+2018-09-19 17:22:19 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/20356773/answer/89333421", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:22 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:23 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/20356773/answer/89333421> (referer: https://zhuanlan.zhihu.com/p/25396421)
+2018-09-19 17:22:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/19937442", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:26 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:26 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/19937442> (referer: https://www.zhihu.com/question/19937442/answer/15059688)
+2018-09-19 17:22:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/48441487/answer/323191451", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:29 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:30 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/48441487/answer/323191451> (referer: https://zhuanlan.zhihu.com/p/36527243)
+2018-09-19 17:22:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/29636653/answer/49664067", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:33 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:33 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/29636653/answer/49664067> (referer: https://zhuanlan.zhihu.com/p/25396421)
+2018-09-19 17:22:33 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/57788467/answer/154376296", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:36 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:36 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/57788467/answer/154376296> (referer: https://zhuanlan.zhihu.com/p/36527243)
+2018-09-19 17:22:36 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/270349158", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/270349158> (referer: https://www.zhihu.com/question/270349158/answer/353521410)
+2018-09-19 17:22:39 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/23460849/answer/163714418", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/23460849/answer/163714418> (referer: https://zhuanlan.zhihu.com/p/36527243)
+2018-09-19 17:22:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:22:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:22:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:22:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/48441487/answer/323191451>
+None
+2018-09-19 17:22:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/29636653/answer/49664067>
+None
+2018-09-19 17:22:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/270349158>
+None
+2018-09-19 17:22:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/270349158>
+None
+2018-09-19 17:22:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:22:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:22:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:22:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/29636653", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/29636653> (referer: https://www.zhihu.com/question/29636653/answer/49664067)
+2018-09-19 17:22:52 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 14 pages/min), scraped 19 items (at 17 items/min)
+2018-09-19 17:22:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"url": "https://www.zhihu.com/question/48441487", "sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/source {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:56 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:63722/session/52f13cc7c194aa94771f9fc1fbf627db/url {"sessionId": "52f13cc7c194aa94771f9fc1fbf627db"}
+2018-09-19 17:22:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:22:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/48441487> (referer: https://www.zhihu.com/question/48441487/answer/323191451)
+2018-09-19 17:22:57 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-09-19 17:22:57 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 8622,
+ 'downloader/request_count': 22,
+ 'downloader/request_method_count/GET': 22,
+ 'downloader/response_bytes': 7917,
+ 'downloader/response_count': 22,
+ 'downloader/response_status_count/400': 22,
+ 'dupefilter/filtered': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 19, 9, 22, 57, 23892),
+ 'item_scraped_count': 19,
+ 'log_count/DEBUG': 207,
+ 'log_count/INFO': 9,
+ 'request_depth_max': 3,
+ 'response_received_count': 22,
+ 'scheduler/dequeued': 22,
+ 'scheduler/dequeued/memory': 22,
+ 'scheduler/enqueued': 22,
+ 'scheduler/enqueued/memory': 22,
+ 'start_time': datetime.datetime(2018, 9, 19, 9, 20, 50, 168911)}
+2018-09-19 17:22:57 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-09-19 17:24:24 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: ZhichengArticle)
+2018-09-19 17:24:24 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.14393-SP0
+2018-09-19 17:24:24 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'ZhichengArticle', 'LOG_FILE': './log.log', 'NEWSPIDER_MODULE': 'ZhichengArticle.spiders', 'SPIDER_MODULES': ['ZhichengArticle.spiders']}
+2018-09-19 17:24:24 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-19 17:24:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2018-09-19 17:24:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'ZhichengArticle.middlewares.ZhichengarticleDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-19 17:24:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-19 17:24:31 [scrapy.middleware] INFO: Enabled item pipelines:
+['ZhichengArticle.pipelines.ZhichengarticlePipeline']
+2018-09-19 17:24:31 [scrapy.core.engine] INFO: Spider opened
+2018-09-19 17:24:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-19 17:24:31 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-19 17:24:36 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element/0.3118516109198899-1/click {"id": "0.3118516109198899-1", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element/0.3118516109198899-2/click {"id": "0.3118516109198899-2", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element {"using": "xpath", "value": ".//*[@class='Login-socialButtonGroup']/button[3]", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element/0.3118516109198899-3/click {"id": "0.3118516109198899-3", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/refresh {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:49 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:24:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element/0.7468913246928692-1/click {"id": "0.7468913246928692-1", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/refresh {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:24:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:24:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:00 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:25:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element/0.5175890257875724-1/click {"id": "0.5175890257875724-1", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/refresh {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:11 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:11 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:25:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://zhuanlan.zhihu.com/p/25396421", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:20 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:20 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/25396421> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:25:20 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://zhuanlan.zhihu.com/p/22434538", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:24 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:24 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/22434538> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:25:24 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://zhuanlan.zhihu.com/p/40163892", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/40163892> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:25:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://zhuanlan.zhihu.com/p/26604228", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:30 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:30 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/26604228> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:25:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://zhuanlan.zhihu.com/p/41045786", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:33 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:33 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/41045786> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:25:33 [scrapy.extensions.logstats] INFO: Crawled 8 pages (at 8 pages/min), scraped 0 items (at 0 items/min)
+2018-09-19 17:25:33 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://zhuanlan.zhihu.com/p/36527243", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:36 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:36 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/36527243> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/25396421>
+None
+2018-09-19 17:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/22434538>
+None
+2018-09-19 17:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/40163892>
+None
+2018-09-19 17:25:36 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.zhihu.com/question/47367985/answer/115810674> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-09-19 17:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/26604228>
+None
+2018-09-19 17:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/41045786>
+None
+2018-09-19 17:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/36527243>
+None
+2018-09-19 17:25:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://zhuanlan.zhihu.com/p/25370234", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/25370234> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/25370234>
+None
+2018-09-19 17:25:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/270349158/answer/353521410", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:46 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:46 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/270349158/answer/353521410> (referer: https://zhuanlan.zhihu.com/p/22434538)
+2018-09-19 17:25:46 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/47367985/answer/115810674", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:48 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:48 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/47367985/answer/115810674> (referer: https://zhuanlan.zhihu.com/p/22434538)
+2018-09-19 17:25:48 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/19937442/answer/15059688", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:51 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/19937442/answer/15059688> (referer: https://zhuanlan.zhihu.com/p/25396421)
+2018-09-19 17:25:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/29636653/answer/49664067", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/29636653/answer/49664067> (referer: https://zhuanlan.zhihu.com/p/25396421)
+2018-09-19 17:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/270349158/answer/353521410>
+None
+2018-09-19 17:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442/answer/15059688>
+None
+2018-09-19 17:25:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/29636653/answer/49664067>
+None
+2018-09-19 17:25:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/20356773/answer/89333421", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:59 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:25:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/20356773/answer/89333421> (referer: https://zhuanlan.zhihu.com/p/25396421)
+2018-09-19 17:25:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/57788467/answer/154376296", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:02 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/57788467/answer/154376296> (referer: https://zhuanlan.zhihu.com/p/36527243)
+2018-09-19 17:26:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/23460849/answer/163714418", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:05 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:05 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/23460849/answer/163714418> (referer: https://zhuanlan.zhihu.com/p/36527243)
+2018-09-19 17:26:05 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/48441487/answer/323191451", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:08 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:08 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/48441487/answer/323191451> (referer: https://zhuanlan.zhihu.com/p/36527243)
+2018-09-19 17:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/57788467/answer/154376296>
+None
+2018-09-19 17:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/48441487/answer/323191451>
+None
+2018-09-19 17:26:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/19937442", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:13 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:13 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/19937442> (referer: https://www.zhihu.com/question/19937442/answer/15059688)
+2018-09-19 17:26:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/270349158", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:16 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:16 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/270349158> (referer: https://www.zhihu.com/question/270349158/answer/353521410)
+2018-09-19 17:26:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/29636653", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:20 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:20 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/29636653> (referer: https://www.zhihu.com/question/29636653/answer/49664067)
+2018-09-19 17:26:20 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/57788467", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:23 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:23 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/57788467> (referer: https://www.zhihu.com/question/57788467/answer/154376296)
+2018-09-19 17:26:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"url": "https://www.zhihu.com/question/48441487", "sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:25 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/source {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:25 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:64572/session/92fbd6b572b4c74ab91fb65f48187755/url {"sessionId": "92fbd6b572b4c74ab91fb65f48187755"}
+2018-09-19 17:26:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:26:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/48441487> (referer: https://www.zhihu.com/question/48441487/answer/323191451)
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/270349158>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/270349158>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/29636653>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/29636653>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/29636653>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/29636653>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/19937442>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/29636653>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/57788467>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/57788467>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/57788467>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/57788467>
+None
+2018-09-19 17:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/48441487>
+None
+2018-09-19 17:26:25 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-09-19 17:26:25 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 9013,
+ 'downloader/request_count': 23,
+ 'downloader/request_method_count/GET': 23,
+ 'downloader/response_bytes': 8213,
+ 'downloader/response_count': 23,
+ 'downloader/response_status_count/400': 23,
+ 'dupefilter/filtered': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 19, 9, 26, 25, 768910),
+ 'item_scraped_count': 30,
+ 'log_count/DEBUG': 225,
+ 'log_count/INFO': 8,
+ 'request_depth_max': 3,
+ 'response_received_count': 23,
+ 'scheduler/dequeued': 23,
+ 'scheduler/dequeued/memory': 23,
+ 'scheduler/enqueued': 23,
+ 'scheduler/enqueued/memory': 23,
+ 'start_time': datetime.datetime(2018, 9, 19, 9, 24, 31, 157876)}
+2018-09-19 17:26:25 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-09-19 17:29:36 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: ZhichengArticle)
+2018-09-19 17:29:36 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.14393-SP0
+2018-09-19 17:29:36 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'ZhichengArticle', 'LOG_FILE': './log.log', 'NEWSPIDER_MODULE': 'ZhichengArticle.spiders', 'SPIDER_MODULES': ['ZhichengArticle.spiders']}
+2018-09-19 17:29:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-19 17:29:39 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:65467/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2018-09-19 17:29:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:29:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'ZhichengArticle.middlewares.ZhichengarticleDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-19 17:29:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-19 17:29:42 [scrapy.middleware] INFO: Enabled item pipelines:
+['ZhichengArticle.pipelines.ZhichengarticlePipeline']
+2018-09-19 17:29:42 [scrapy.core.engine] INFO: Spider opened
+2018-09-19 17:29:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-19 17:29:42 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-19 17:29:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:29:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:29:51 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/window {"sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:29:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:29:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%94%A8%E8%BD%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:29:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:29:55 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/window {"sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:29:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:29:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:30:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:00 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/window {"sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:30:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:30:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:04 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/window {"sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:30:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:04 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B>
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1363, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <400 https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%85%AC%E5%8F%B8%E6%B3%A8%E5%86%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\ZhichengArticle\ZhichengArticle\middlewares.py", line 110, in process_response
+    self.web.get(request.url)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 324, in get
+    self.execute(Command.GET, {'url': url})
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "F:\GitHubCode\Code\Python\ZhichengArticle\ZhichengArticle\middlewares.py", line 129, in process_response
+    self.web.close()
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in close
+    self.execute(Command.CLOSE)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64)
+
+2018-09-19 17:30:04 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%94%A8%E8%BD%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B>
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1363, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <400 https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%94%A8%E8%BD%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\ZhichengArticle\ZhichengArticle\middlewares.py", line 110, in process_response
+    self.web.get(request.url)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 324, in get
+    self.execute(Command.GET, {'url': url})
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "F:\GitHubCode\Code\Python\ZhichengArticle\ZhichengArticle\middlewares.py", line 129, in process_response
+    self.web.close()
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in close
+    self.execute(Command.CLOSE)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64)
+
+2018-09-19 17:30:04 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B>
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1363, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <400 https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E7%AD%BE%E8%AF%81%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\ZhichengArticle\ZhichengArticle\middlewares.py", line 110, in process_response
+    self.web.get(request.url)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 324, in get
+    self.execute(Command.GET, {'url': url})
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "F:\GitHubCode\Code\Python\ZhichengArticle\ZhichengArticle\middlewares.py", line 129, in process_response
+    self.web.close()
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in close
+    self.execute(Command.CLOSE)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64)
+
+2018-09-19 17:30:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%87%BA%E5%B7%AE%E7%94%B3%E8%AF%B7%E5%AE%A1%E6%89%B9%E6%8A%A5%E9%94%80%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:30:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:08 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/window {"sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:30:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:09 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B>
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1363, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <400 https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B3%95%E5%BE%8B%E6%9C%8D%E5%8A%A1%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\ZhichengArticle\ZhichengArticle\middlewares.py", line 110, in process_response
+    self.web.get(request.url)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 324, in get
+    self.execute(Command.GET, {'url': url})
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "F:\GitHubCode\Code\Python\ZhichengArticle\ZhichengArticle\middlewares.py", line 129, in process_response
+    self.web.close()
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in close
+    self.execute(Command.CLOSE)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64)
+
+2018-09-19 17:30:09 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%87%BA%E5%B7%AE%E7%94%B3%E8%AF%B7%E5%AE%A1%E6%89%B9%E6%8A%A5%E9%94%80%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B>
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1363, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <400 https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%87%BA%E5%B7%AE%E7%94%B3%E8%AF%B7%E5%AE%A1%E6%89%B9%E6%8A%A5%E9%94%80%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\ZhichengArticle\ZhichengArticle\middlewares.py", line 110, in process_response
+    self.web.get(request.url)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 324, in get
+    self.execute(Command.GET, {'url': url})
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\twisted\internet\defer.py", line 1386, in _inlineCallbacks
+    result = g.send(result)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\scrapy\core\downloader\middleware.py", line 53, in process_response
+    spider=spider)
+  File "F:\GitHubCode\Code\Python\ZhichengArticle\ZhichengArticle\middlewares.py", line 129, in process_response
+    self.web.close()
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 679, in close
+    self.execute(Command.CLOSE)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "F:\GitHubCode\Code\Python\python_virtual\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64)
+
+2018-09-19 17:30:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E5%B7%AE%E6%97%85%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:30:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:13 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/window {"sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:30:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:65467/session/1aa0e1cda279a09f407f13c47d4d706d/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "1aa0e1cda279a09f407f13c47d4d706d"}
+2018-09-19 17:30:39 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: ZhichengArticle)
+2018-09-19 17:30:39 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.14393-SP0
+2018-09-19 17:30:39 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'ZhichengArticle', 'LOG_FILE': './log.log', 'NEWSPIDER_MODULE': 'ZhichengArticle.spiders', 'SPIDER_MODULES': ['ZhichengArticle.spiders']}
+2018-09-19 17:30:39 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-19 17:30:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2018-09-19 17:30:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'ZhichengArticle.middlewares.ZhichengarticleDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-19 17:30:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-19 17:30:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['ZhichengArticle.pipelines.ZhichengarticlePipeline']
+2018-09-19 17:30:45 [scrapy.core.engine] INFO: Spider opened
+2018-09-19 17:30:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-19 17:30:45 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-19 17:30:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E9%94%80%E5%94%AE%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:30:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:30:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.36862103670536084-1/click {"id": "0.36862103670536084-1", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:30:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:30:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.36862103670536084-2/click {"id": "0.36862103670536084-2", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:30:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialButtonGroup']/button[3]", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:30:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:30:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.36862103670536084-3/click {"id": "0.36862103670536084-3", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:30:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/refresh {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:01 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:01 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E9%94%80%E5%94%AE%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:31:01 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E8%BF%90%E8%BE%93%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.05763670448753522-1/click {"id": "0.05763670448753522-1", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/refresh {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:11 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:11 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E8%BF%90%E8%BE%93%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:31:11 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E8%BD%AC%E8%AE%A9%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.7964719867515659-1/click {"id": "0.7964719867515659-1", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:19 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:25 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/refresh {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E8%BD%AC%E8%AE%A9%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:31:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E5%A4%96%E5%8C%85%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:31 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:31 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.45029416214863893-1/click {"id": "0.45029416214863893-1", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:36 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/refresh {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E5%A4%96%E5%8C%85%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:31:44 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://zhuanlan.zhihu.com/p/26565723> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-09-19 17:31:45 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2018-09-19 17:31:49 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B1%BD%E8%BD%A6%E7%A7%9F%E5%87%AD%E5%90%88%E5%90%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:51 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.4079188548956565-1/click {"id": "0.4079188548956565-1", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:31:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:31:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/refresh {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B1%BD%E8%BD%A6%E7%A7%9F%E5%87%AD%E5%90%88%E5%90%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:32:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/20184432", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:09 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:09 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/20184432> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E8%BF%90%E8%BE%93%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:32:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E4%BF%9D%E5%85%BB%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.013196576216303546-1/click {"id": "0.013196576216303546-1", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/refresh {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:19 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:19 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E4%BF%9D%E5%85%BB%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:32:19 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/36053975", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:22 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:22 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/36053975> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E8%BF%90%E8%BE%93%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:32:22 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/26568072", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:25 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:25 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/26568072> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E9%94%80%E5%94%AE%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:32:25 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E4%B8%8A%E6%88%B7%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.3095654057160211-1/click {"id": "0.3095654057160211-1", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/refresh {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:34 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:34 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E4%B8%8A%E6%88%B7%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:32:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E4%BD%BF%E7%94%A8%E7%AE%A1%E7%90%86%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:37 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:37 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:37 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.7376002830518218-1/click {"id": "0.7376002830518218-1", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:37 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:37 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:37 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/refresh {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E4%BD%BF%E7%94%A8%E7%AE%A1%E7%90%86%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:32:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E5%8A%A0%E7%9B%9F%E5%8D%8F%E8%AE%AE%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.6406181718042592-1/click {"id": "0.6406181718042592-1", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:47 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:47 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:53 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/refresh {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:54 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E5%8A%A0%E7%9B%9F%E5%8D%8F%E8%AE%AE%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:32:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E4%BA%8C%E6%89%8B%E8%BD%A6%E8%BF%87%E6%88%B7%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='AppHeader-profile']/div/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element/0.27982492471291054-1/click {"id": "0.27982492471291054-1", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:32:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/element {"using": "xpath", "value": ".//*[@class='Login-socialLogin']/button", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:32:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/refresh {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:05 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:05 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E4%BA%8C%E6%89%8B%E8%BD%A6%E8%BF%87%E6%88%B7%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B> (referer: None)
+2018-09-19 17:33:05 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/35343364", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:06 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:08 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:08 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/35343364> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E8%BF%90%E8%BE%93%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:33:08 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/24087543", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:11 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:11 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/24087543> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E8%BF%90%E8%BE%93%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:33:11 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2018-09-19 17:33:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/20184432>
+None
+2018-09-19 17:33:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/36053975>
+None
+2018-09-19 17:33:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/26568072>
+None
+2018-09-19 17:33:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/35343364>
+None
+2018-09-19 17:33:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/24087543>
+None
+2018-09-19 17:33:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/26565723", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:19 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:19 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/26565723> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E9%94%80%E5%94%AE%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:33:19 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/30564257", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:21 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:21 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/30564257> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E5%A4%96%E5%8C%85%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:33:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/20418407/answer/94250686", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:28 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:28 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:28 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/20418407/answer/94250686> (referer: https://zhuanlan.zhihu.com/p/26568072)
+2018-09-19 17:33:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/46479017/answer/134596792", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:34 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:34 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/46479017/answer/134596792> (referer: https://zhuanlan.zhihu.com/p/26568072)
+2018-09-19 17:33:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/27782396", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/27782396> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E5%8A%A0%E7%9B%9F%E5%8D%8F%E8%AE%AE%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:33:38 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/25834338", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/25834338> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E5%A4%96%E5%8C%85%E5%8D%8F%E8%AE%AE%E4%B9%A6%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:33:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/65465197/answer/354242937", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/65465197/answer/354242937> (referer: https://zhuanlan.zhihu.com/p/26568072)
+2018-09-19 17:33:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/68334581/answer/262065418", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:50 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/68334581/answer/262065418> (referer: https://zhuanlan.zhihu.com/p/20184432)
+2018-09-19 17:33:50 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/34937184", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:50 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:52 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/34937184> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E4%B8%8A%E6%88%B7%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:33:52 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/27192653", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/27192653> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E5%8A%A0%E7%9B%9F%E5%8D%8F%E8%AE%AE%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:33:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/26565723>
+None
+2018-09-19 17:33:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/30564257>
+None
+2018-09-19 17:33:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/20418407/answer/94250686>
+None
+2018-09-19 17:33:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/46479017/answer/134596792>
+None
+2018-09-19 17:33:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/27782396>
+None
+2018-09-19 17:33:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/25834338>
+None
+2018-09-19 17:33:55 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 10 pages/min), scraped 11 items (at 11 items/min)
+2018-09-19 17:33:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/30398114", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:33:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:33:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/30398114> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E4%BF%9D%E5%85%BB%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/65465197/answer/354242937>
+None
+2018-09-19 17:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/68334581/answer/262065418>
+None
+2018-09-19 17:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/34937184>
+None
+2018-09-19 17:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/27192653>
+None
+2018-09-19 17:33:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/30398114>
+None
+2018-09-19 17:34:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/22033772", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:03 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/22033772> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E4%BF%9D%E5%85%BB%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:34:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/22033772>
+None
+2018-09-19 17:34:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/35971782", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:07 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:07 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/35971782> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E8%BD%A6%E8%BE%86%E4%BF%9D%E5%85%BB%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:34:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/59321607/answer/164023987", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:12 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:12 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/59321607/answer/164023987> (referer: https://zhuanlan.zhihu.com/p/27782396)
+2018-09-19 17:34:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/46479017", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:35 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:37 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:37 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:37 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:37 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/46479017> (referer: https://www.zhihu.com/question/46479017/answer/134596792)
+2018-09-19 17:34:37 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/25845225", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:40 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:40 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:40 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/25845225> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B1%BD%E8%BD%A6%E7%A7%9F%E5%87%AD%E5%90%88%E5%90%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:34:40 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/33245778", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:43 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:43 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/33245778> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B1%BD%E8%BD%A6%E7%A7%9F%E5%87%AD%E5%90%88%E5%90%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:34:43 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/274947401/answer/377232840", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:34:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:34:47 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:07 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/274947401/answer/377232840> (referer: https://zhuanlan.zhihu.com/p/30564257)
+2018-09-19 17:35:07 [scrapy.extensions.logstats] INFO: Crawled 33 pages (at 8 pages/min), scraped 17 items (at 6 items/min)
+2018-09-19 17:35:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/275968403/answer/394815852", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:11 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:13 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:13 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/275968403/answer/394815852> (referer: https://zhuanlan.zhihu.com/p/30564257)
+2018-09-19 17:35:13 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://zhuanlan.zhihu.com/p/31486454", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:17 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:17 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zhuanlan.zhihu.com/p/31486454> (referer: https://www.zhihu.com/search?type=content&q=%E5%8A%9E%E7%90%86%E6%B1%BD%E8%BD%A6%E7%A7%9F%E5%87%AD%E5%90%88%E5%90%8C%E6%89%8B%E7%BB%AD%E7%9A%84%E6%B5%81%E7%A8%8B)
+2018-09-19 17:35:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/35971782>
+None
+2018-09-19 17:35:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/46479017>
+None
+2018-09-19 17:35:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/46479017>
+None
+2018-09-19 17:35:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/46479017>
+None
+2018-09-19 17:35:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/25845225>
+None
+2018-09-19 17:35:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/33245778>
+None
+2018-09-19 17:35:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/46479017>
+None
+2018-09-19 17:35:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/274947401/answer/377232840>
+None
+2018-09-19 17:35:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/275968403/answer/394815852>
+None
+2018-09-19 17:35:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zhuanlan.zhihu.com/p/31486454>
+None
+2018-09-19 17:35:22 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/294035361/answer/488754218", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:25 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:27 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/294035361/answer/488754218> (referer: https://zhuanlan.zhihu.com/p/34937184)
+2018-09-19 17:35:27 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/287014276/answer/452699702", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:32 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:32 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/287014276/answer/452699702> (referer: https://zhuanlan.zhihu.com/p/34937184)
+2018-09-19 17:35:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/283817844/answer/435634497", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:35 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:57 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:35:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:35:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/283817844/answer/435634497> (referer: https://zhuanlan.zhihu.com/p/34937184)
+2018-09-19 17:35:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/26115128/answer/32313333", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:36:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:36:24 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:36:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:36:24 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:36:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:36:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/26115128/answer/32313333> (referer: https://zhuanlan.zhihu.com/p/30564257)
+2018-09-19 17:36:24 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/267613247/answer/449522072", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:36:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:36:29 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:36:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:36:29 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:36:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:36:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/267613247/answer/449522072> (referer: https://zhuanlan.zhihu.com/p/34937184)
+2018-09-19 17:36:29 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/68334581", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:36:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:36:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:36:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:36:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:36:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:36:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/68334581> (referer: https://www.zhihu.com/question/68334581/answer/262065418)
+2018-09-19 17:36:55 [scrapy.extensions.logstats] INFO: Crawled 41 pages (at 8 pages/min), scraped 27 items (at 10 items/min)
+2018-09-19 17:36:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/294035361/answer/488754218>
+None
+2018-09-19 17:36:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/287014276/answer/452699702>
+None
+2018-09-19 17:36:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/283817844/answer/435634497>
+None
+2018-09-19 17:36:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/26115128/answer/32313333>
+None
+2018-09-19 17:36:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/267613247/answer/449522072>
+None
+2018-09-19 17:36:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/68334581>
+None
+2018-09-19 17:37:01 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/65465197", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/65465197> (referer: https://www.zhihu.com/question/65465197/answer/354242937)
+2018-09-19 17:37:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/30071957/answer/129342301", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:30 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/30071957/answer/129342301> (referer: https://zhuanlan.zhihu.com/p/30398114)
+2018-09-19 17:37:32 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/265683240/answer/299808018", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:38 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:39 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/265683240/answer/299808018> (referer: https://zhuanlan.zhihu.com/p/27782396)
+2018-09-19 17:37:39 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/30650663/answer/50136212", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:37:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/30650663/answer/50136212> (referer: https://zhuanlan.zhihu.com/p/27782396)
+2018-09-19 17:37:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/65661559/answer/233395500", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/65661559/answer/233395500> (referer: https://zhuanlan.zhihu.com/p/30398114)
+2018-09-19 17:38:09 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/20418407", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/20418407> (referer: https://www.zhihu.com/question/20418407/answer/94250686)
+2018-09-19 17:38:12 [scrapy.extensions.logstats] INFO: Crawled 47 pages (at 6 pages/min), scraped 33 items (at 6 items/min)
+2018-09-19 17:38:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.zhihu.com/question/56006467/answer/198216468> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-09-19 17:38:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/65465197>
+None
+2018-09-19 17:38:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/30071957/answer/129342301>
+None
+2018-09-19 17:38:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/265683240/answer/299808018>
+None
+2018-09-19 17:38:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/30650663/answer/50136212>
+None
+2018-09-19 17:38:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/65661559/answer/233395500>
+None
+2018-09-19 17:38:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/20418407>
+None
+2018-09-19 17:38:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/20418407>
+None
+2018-09-19 17:38:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/20418407>
+None
+2018-09-19 17:38:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/38300175/answer/75915203", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:21 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:21 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/38300175/answer/75915203> (referer: https://zhuanlan.zhihu.com/p/25845225)
+2018-09-19 17:38:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/274947401", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:23 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:24 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:24 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/274947401> (referer: https://www.zhihu.com/question/274947401/answer/377232840)
+2018-09-19 17:38:24 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/275968403", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:27 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:29 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:29 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:29 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/275968403> (referer: https://www.zhihu.com/question/275968403/answer/394815852)
+2018-09-19 17:38:29 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/283817844", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:33 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:34 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/283817844> (referer: https://www.zhihu.com/question/283817844/answer/435634497)
+2018-09-19 17:38:34 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/294035361", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:34 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:36 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:36 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:36 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/294035361> (referer: https://www.zhihu.com/question/294035361/answer/488754218)
+2018-09-19 17:38:36 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/267613247", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:39 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/267613247> (referer: https://www.zhihu.com/question/267613247/answer/449522072)
+2018-09-19 17:38:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/38300175/answer/75915203>
+None
+2018-09-19 17:38:41 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/26115128", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:43 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:45 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/26115128> (referer: https://www.zhihu.com/question/26115128/answer/32313333)
+2018-09-19 17:38:45 [scrapy.extensions.logstats] INFO: Crawled 54 pages (at 7 pages/min), scraped 42 items (at 9 items/min)
+2018-09-19 17:38:46 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/287014276", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:48 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:48 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:48 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:49 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/287014276> (referer: https://www.zhihu.com/question/287014276/answer/452699702)
+2018-09-19 17:38:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/265683240", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:55 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/265683240> (referer: https://www.zhihu.com/question/265683240/answer/299808018)
+2018-09-19 17:38:55 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/56006467/answer/198216468", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:56 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:58 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:38:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/56006467/answer/198216468> (referer: https://zhuanlan.zhihu.com/p/25845225)
+2018-09-19 17:38:58 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/65661559", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:38:59 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:01 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:01 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/65661559> (referer: https://www.zhihu.com/question/65661559/answer/233395500)
+2018-09-19 17:39:01 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/30650663", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:05 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:05 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/30650663> (referer: https://www.zhihu.com/question/30650663/answer/50136212)
+2018-09-19 17:39:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.zhihu.com/question/56006467/answer/198216468>
+None
+2018-09-19 17:39:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/30071957", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:15 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:15 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:15 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/30071957> (referer: https://www.zhihu.com/question/30071957/answer/129342301)
+2018-09-19 17:39:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/38300175", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:20 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:20 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/38300175> (referer: https://www.zhihu.com/question/38300175/answer/75915203)
+2018-09-19 17:39:20 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"url": "https://www.zhihu.com/question/56006467", "sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:22 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/source {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:23 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:49477/session/077b8dd3ca079ee36ded5240c4a47923/url {"sessionId": "077b8dd3ca079ee36ded5240c4a47923"}
+2018-09-19 17:39:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-09-19 17:39:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.zhihu.com/question/56006467> (referer: https://www.zhihu.com/question/56006467/answer/198216468)
+2018-09-19 17:39:23 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-09-19 17:39:23 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 1,
+ 'downloader/request_bytes': 25493,
+ 'downloader/request_count': 63,
+ 'downloader/request_method_count/GET': 63,
+ 'downloader/response_bytes': 21410,
+ 'downloader/response_count': 62,
+ 'downloader/response_status_count/400': 62,
+ 'dupefilter/filtered': 22,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 19, 9, 39, 23, 118946),
+ 'item_scraped_count': 43,
+ 'log_count/DEBUG': 568,
+ 'log_count/INFO': 14,
+ 'request_depth_max': 3,
+ 'response_received_count': 62,
+ 'retry/count': 1,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 1,
+ 'scheduler/dequeued': 63,
+ 'scheduler/dequeued/memory': 63,
+ 'scheduler/enqueued': 63,
+ 'scheduler/enqueued/memory': 63,
+ 'start_time': datetime.datetime(2018, 9, 19, 9, 30, 45, 122298)}
+2018-09-19 17:39:23 [scrapy.core.engine] INFO: Spider closed (finished)

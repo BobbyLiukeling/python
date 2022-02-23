@@ -1,0 +1,46 @@
+主账号ID 100011817670 用户名 Manager 登录密码 U-Efo+`}x;fO@+5n,|,.U3UPiQ6812F} SecretId - SecretKey -
+
+用户名：Manager
+密码：U-Efo+`}x;fO@+5n,|,.U3UPiQ6812F}
+new_admin:Abc@18328020353
+
+
+IP : 148.70.94.85（公）
+内：172.27.0.6
+
+主机账号：100011817670
+主机ID：ins-27fn22x
+
+centos：
+user：root
+admin： sA6f8n4a:eP|
+
+
+Ubuntu 
+	username：ubuntu
+	admin：crispr@123
+	root_admin:crispr@123
+
+Ubuntu内mysql：
+	database：crispr
+	username：bobby
+	admin：123456
+
+
+
+外部访问地址：148.70.94.85:8000
+
+index：序号
+CRISPR_name ：CRISPR 名称
+Organism：CRISPR起源的细菌名称
+CRISPR_type：CRISPR类型，暂时定为10种类型（亚型）
+CRISPR_Length：CRISPR序列长度
+PAM_Consensus：PAM序列（碱基序列）
+CRISPR_Consensus：CRISPR序列（氨基酸序列）
+PI_Sequence：PI序列（氨基酸序列）
+PI_Length：PI长度
+PAM_Length：PAM长度
+PI_Start_Position：PI序列在CRISPR序列中的起始位置
+
+
+

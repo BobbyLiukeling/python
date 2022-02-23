@@ -1,0 +1,12 @@
+%nproc=[nproc]
+%mem=[mem]
+#p [level]
+scf=(verytight)
+iop(99/9=1,99/14=3)
+freq=noraman
+
+--Frequency calculation--
+
+[charge],[multipl]
+[zmat]
+

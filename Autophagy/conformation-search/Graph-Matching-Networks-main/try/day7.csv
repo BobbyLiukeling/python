@@ -1,0 +1,35 @@
+,CA1_CA3,CA1_DG,cpd_HYL,cpd_MB,fxs_CA1,fxs_CA3,fxs_cpd,HYL_TH,"I _V,VIa,VIb",MB_TH,TH_CA1,"V,VIa,VIb_II,III,IV","V,VIa,VIb_RSP",VL_fxs,VL_I
+0,Nptxr_Nptx2,Sema5a_Plxnb3,Gnas_Gcgr,Gnas_Gcgr,Calm2_Kcnq3,Calm2_Kcnq3,Agt_Agtr2,Cck_Cckbr,Calm2_Kcnq3,(Cck_Cckar),Cck_Cckbr,Nptxr_Nptx2,Nptxr_Nptx2,Trf_Tfrc,Nptxr_Nptx2
+1,Nptxr_Nptx1,Sema5a_Met,Gnas_Pth1r,Gnas_Pth1r,Calm2_Scn10a,Calm2_Scn10a,Agt_Mas1,Cck_Cckar,Calm2_Scn10a,(Cck_Cckbr),Cck_Cckar,Nptxr_Nptx1,Nptxr_Nptx1,Trf_Tfr2,Nptxr_Nptx1
+2,Gnas_Gcgr,Sema5a_ Plxna1,Gnas_Lhcgr,Gnas_Lhcgr,Calm2_Adcy8,Calm2_Adcy8,Agt_Agtr1b,"Ramp3, Adm2",Calm2_Adcy8,(Ramp3_ Adm2),Ramp3_Adm2,Plxnd1_Sema3c,Plxnd1_Sema3c,Calm2_Kcnq3,Plxnd1_Sema3c
+3,Gnas_Pth1r,Cst3_Lrp2,Gnas_Htr6,Gnas_Htr6,Calm2_Grm7,Calm2_Grm7,Agt_Agtr1a,"Ramp3, Adcyap1",Calm2_Grm7,(Ramp3_Adcyap1),Ramp3_Vip,Plxnd1_Sema3e,Plxnd1_Sema3e,Calm2_Scn10a,Plxnd1_Sema3e
+4,Gnas_Lhcgr,Clu_Lrp2,Gnas_Ptgdr,Gnas_Ptgdr,Calm2_Cacna1c,Calm2_Cacna1c,Agt_Lrp2,"Ramp3, Vip",Calm2_Cacna1c,(Ramp3_Vip),Ramp3_Iapp,Plxnd1_Sema4a,Plxnd1_Sema4a,Calm2_Adcy8,Plxnd1_Sema4a
+5,Gnas_Htr6,Clu_Lrp8,,,Calm2_Scn4a,Calm2_Scn4a,Apoe_Lrp2,"Ramp3, Iapp",Calm2_Scn4a,(Ramp3_Iapp),Ramp3_Adcyap1,Nrxn1_Nlgn1,Nrxn1_Nlgn1,Calm2_Grm7,Nrxn1_Nlgn1
+6,Gnas_Ptgdr,Clu_Vldlr,,,Calm2_Mylk,Calm2_Mylk,Apoe_Abca1,Ntng1_Lrrc4c,Calm2_Mylk,(Ntng1_Lrrc4c),Ntng1_Lrrc4c,Nrxn1_Nlgn2,Nrxn1_Nlgn2,Calm2_Cacna1c,Nrxn1_Nlgn2
+7,,,,,Calm2_Trpc5,Calm2_Trpc5,Apoe_Lrp5,,Calm2_Trpc5,(Thy1_Fyn),Thy1_Fyn,Nrxn1_Nlgn3,Nrxn1_Nlgn3,Calm2_Scn4a,Nrxn1_Nlgn3
+8,,,,,Cck_Cckbr,Cck_Cckbr,Apoe_Lrp1,,Gng3_Kcnj6,,,Nrxn1_Nxph1,Nrxn1_Nxph1,Calm2_Mylk,Nrxn1_Nxph1
+9,,,,,Cck_Cckar,Cck_Cckar,Apoe_Scarb1,,Hspa8_Aqp2,,,Nrxn1_Nxph2,Nrxn1_Nxph2,Calm2_Trpc5,Nrxn1_Nxph2
+10,,,,,,,Apoe_Lrp6,,Ccl27a_Ackr2,,,Nrxn1_Nxph3,Nrxn1_Nxph3,Cck_Cckbr,Nrxn1_Nxph3
+11,,,,,,,Apoe_Trem2,,Ccl27a_Ccr10,,,Nrxn1_Sytl3,Nrxn1_Sytl3,Cck_Cckar,Nrxn1_Sytl3
+12,,,,,,,Apoe_Sorl1,,,,,Ptn_Alk,Ptn_Alk,Cdq_Adam2,Ptn_Alk
+13,,,,,,,Apoe_Sdc4,,,,,Ptn_Nrp1,Ptn_Nrp1,Cdq_Adam17,Ptn_Nrp1
+14,,,,,,,Apoe_Lrp8,,,,,Ptn_Ptprb,Ptn_Ptprb,Cdq_Izumo1,Ptn_Ptprb
+15,,,,,,,Apoe_Vldlr ,,,,,Ptn_Sdc4,Ptn_Sdc4,Cd9_Adam3,Ptn_Sdc4
+16,,,,,,,Apoe_Sdc1,,,,,Ptn_Sdc2,Ptn_Sdc2,Cd9_Hbegf,Ptn_Sdc2
+17,,,,,,,Apoe_Ldlr,,,,,Calm1_Fas,Ptn_Ptprz1,Vim_Cd44,Ptn_Ptprz1
+18,,,,,,,S100b_Alcam,,,,,Calm1_Kcnq3,Ptn_Sdc1,Ctsd_Lrp1,Ptn_Sdc1
+19,,,,,,,S100b_Fgfr1,,,,,Calm1_Scn10a,Calm1_Fas,Cd63_Timp1,Calm1_Fas
+20,,,,,,,Cd81_C3,,,,,Calm1_ Adcy8,Calm1_Kcnq3,Cd63_Amelx,Calm1_Kcnq3
+21,,,,,,,Cd81_Gpc3,,,,,Calm1_Kcnn4,Calm1_Scn10a,Clu_Lrp8,Calm1_Scn10a
+22,,,,,,,Mag_Col9a1,,,,,Calm1_Oprm1,Calm1_Adcy8,Clu_Lrp2,Calm1_Adcy8
+23,,,,,,,Mag_Col2a1,,,,,Calm1_Mylk,Calm1_Kcnn4,Clu_Vldlr,Calm1_Kcnn4
+24,,,,,,,Mag_Col9a3,,,,,Calm1_Trpc5,Calm1_Oprm1,,Calm1_Oprm1
+25,,,,,,,Mag_Col9a2,,,,,Calm1_Sell,Calm1_Mylk,,Calm1_Mylk
+26,,,,,,,Mag_Col3a1,,,,,Calm1_Cnga2,Calm1_Trpc5,,Calm1_Trpc5
+27,,,,,,,Mag_Lgala3,,,,,Calm1_Cacn1c,Calm1_Sell,,Calm1_Sell
+28,,,,,,,,,,,,Calm1_Grm4,Calm1_Cnga2,,Calm1_Cnga2
+29,,,,,,,,,,,,Calm1_Scn4a,Calm1_Cacn1c,,Calm1_Cacn1c
+30,,,,,,,,,,,,Calm1_Mip,Calm1_Grm4,,Calm1_Grm4
+31,,,,,,,,,,,,Calm1_Kcnq1,Calm1_Scn4a,,Calm1_Scn4a
+32,,,,,,,,,,,,,Calm1_Mip,,Calm1_Mip
+33,,,,,,,,,,,,,Calm1_Kcnq1,,Calm1_Kcnq1

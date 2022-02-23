@@ -1,0 +1,198 @@
+5DC9_IMD_A_302
+  RCSB PDB12061717153D
+Coordinates from PDB:5DC9:A:302 Model:1 without hydrogens
+  5  5  0  0  0  0            999 V2000
+  -11.5020  -59.6910   -6.6160   N 0  0  0  0  0  0  0  0  0  0  0  0
+  -12.1930  -58.8350   -7.4460   C 0  0  0  0  0  0  0  0  0  0  0  0
+  -11.3290  -58.4390   -8.3990   N 0  3  0  0  0  0  0  0  0  0  0  0
+  -10.1290  -59.0000   -8.1460   C 0  0  0  0  0  0  0  0  0  0  0  0
+  -10.2260  -59.7750   -7.0050   C 0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  1  5  1  0  0  0  0
+  2  3  2  0  0  0  0
+  3  4  1  0  0  0  0
+  4  5  2  0  0  0  0
+M  CHG  1   3   1
+A    1
+N1
+A    2
+C2
+A    3
+N3
+A    4
+C4
+A    5
+C5
+M  END
+>  <InstanceId>
+5DC9_IMD_A_302
+
+>  <ChemCompId>
+IMD
+
+>  <PdbId>
+5DC9
+
+>  <ChainId>
+A
+
+>  <ResidueNumber>
+302
+
+>  <InsertionCode>
+
+
+>  <Model>
+1
+
+>  <AltIds>
+
+
+>  <MissingHeavyAtoms>
+0
+
+>  <ObservedFormula>
+C3 N2
+
+>  <Name>
+IMIDAZOLE
+
+>  <SystematicName>
+3H-imidazol-1-ium
+
+>  <Synonyms>
+
+
+>  <Type>
+NON-POLYMER
+
+>  <Formula>
+C3 H5 N2
+
+>  <MolecularWeight>
+69.085
+
+>  <ModifiedDate>
+2011-06-04
+
+>  <Parent>
+
+
+>  <OneLetterCode>
+
+
+>  <SubcomponentList>
+
+
+>  <AmbiguousFlag>
+N
+
+>  <InChI>
+InChI=1S/C3H4N2/c1-2-5-3-4-1/h1-3H,(H,4,5)/p+1
+
+>  <InChIKey>
+RAXXELZNTBOGNW-UHFFFAOYSA-O
+
+>  <SMILES>
+c1c[nH+]c[nH]1
+
+$$$$
+5DC9_IMD_A_303
+  RCSB PDB12061717153D
+Coordinates from PDB:5DC9:A:303 Model:1 without hydrogens
+  5  5  0  0  0  0            999 V2000
+  -10.2580  -37.9490  -19.4540   N 0  0  0  0  0  0  0  0  0  0  0  0
+  -10.8910  -36.9640  -18.7650   C 0  0  0  0  0  0  0  0  0  0  0  0
+  -10.1070  -36.5750  -17.7310   N 0  3  0  0  0  0  0  0  0  0  0  0
+   -8.9740  -37.3030  -17.7830   C 0  0  0  0  0  0  0  0  0  0  0  0
+   -9.0460  -38.1270  -18.8830   C 0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  1  5  1  0  0  0  0
+  2  3  2  0  0  0  0
+  3  4  1  0  0  0  0
+  4  5  2  0  0  0  0
+M  CHG  1   3   1
+A    1
+N1
+A    2
+C2
+A    3
+N3
+A    4
+C4
+A    5
+C5
+M  END
+>  <InstanceId>
+5DC9_IMD_A_303
+
+>  <ChemCompId>
+IMD
+
+>  <PdbId>
+5DC9
+
+>  <ChainId>
+A
+
+>  <ResidueNumber>
+303
+
+>  <InsertionCode>
+
+
+>  <Model>
+1
+
+>  <AltIds>
+
+
+>  <MissingHeavyAtoms>
+0
+
+>  <ObservedFormula>
+C3 N2
+
+>  <Name>
+IMIDAZOLE
+
+>  <SystematicName>
+3H-imidazol-1-ium
+
+>  <Synonyms>
+
+
+>  <Type>
+NON-POLYMER
+
+>  <Formula>
+C3 H5 N2
+
+>  <MolecularWeight>
+69.085
+
+>  <ModifiedDate>
+2011-06-04
+
+>  <Parent>
+
+
+>  <OneLetterCode>
+
+
+>  <SubcomponentList>
+
+
+>  <AmbiguousFlag>
+N
+
+>  <InChI>
+InChI=1S/C3H4N2/c1-2-5-3-4-1/h1-3H,(H,4,5)/p+1
+
+>  <InChIKey>
+RAXXELZNTBOGNW-UHFFFAOYSA-O
+
+>  <SMILES>
+c1c[nH+]c[nH]1
+
+$$$$

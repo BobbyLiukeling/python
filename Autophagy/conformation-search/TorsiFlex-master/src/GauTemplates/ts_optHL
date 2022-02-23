@@ -1,0 +1,14 @@
+%nproc=[nproc]
+%mem=[mem]
+#p [level]
+scf=(verytight)
+iop(99/9=1,99/14=3)
+opt=([optmode],calcfc,ts,noeigentest,MaxCycles=200)
+
+--Optimization of transition state--
+
+[charge],[multipl]
+[zmat]
+[modred]
+[fccards]
+

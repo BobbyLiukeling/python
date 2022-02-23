@@ -1,0 +1,39 @@
+ply
+format ascii 1.0
+comment author: Greg Turk
+comment object: another cube
+element vertex 8
+property float x
+property float y
+property float z
+property uchar red                    { start of vertex color, vertex 元素 颜色属性 }
+property uchar green
+property uchar blue
+element face 7
+property list uchar int vertex_index  { (uchar) number of vertices for each face (每一个面的顶点个数)，(int) 顶点的索引  }
+element edge 5                        { five edges in object，声明 edge 元素 + 元素数目 }
+property int vertex1                  { index to first vertex of edge，声明 edge 元素的属性 vertex1 + 类型 }
+property int vertex2                  { index to second vertex }
+property uchar red                    { start of edge color， 声明 edge 元素的属性 red + 类型 }
+property uchar green
+property uchar blue
+end_header
+0 0 0 255 0 0                         { start of vertex list，顶点元素列表 x y z r g b }
+0 0 1 255 0 0
+0 1 1 255 0 0
+0 1 0 255 0 0
+1 0 0 0 0 255
+1 0 1 0 0 255
+1 1 1 0 0 255
+1 1 0 0 0 255
+3 0 1 2                           { start of face list, begin with a triangle，面（三角形）元素列表 面顶点数，顶点索引 }
+3 0 2 3                           { another triangle }
+4 7 6 5 4                         { now some quadrilaterals，面（四边形）元素列表，同上 }
+4 0 4 5 1
+4 1 5 6 2
+4 2 6 7 3
+4 3 7 4 0
+0 1 255 255 255                   { start of edge list, begin with white edge，边元素列表，起始点索引 结束点索引 r g b }
+1 2 255 255 255
+2 3 255 255 255
+3 0 255 255 255

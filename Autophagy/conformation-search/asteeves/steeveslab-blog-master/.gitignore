@@ -1,0 +1,6 @@
+*~
+*.pyc
+output
+*.pid
+_build
+_nb_header.html
